@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.App {
+  padding: 16px;
+}
+
+.rental-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.rental-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 100%; /* По умолчанию занимает всю ширину */
+  max-width: 300px; /* Ограничение на максимальную ширину */
+  box-sizing: border-box;
+}
+
+.rental-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.rental-card h2 {
+  font-size: 1.5rem;
+}
+
+.rental-card p {
+  font-size: 1rem;
+  margin: 8px 0;
+}
+
+@media (min-width: 768px) {
+  .rental-card {
+    width: calc(50% - 16px); /* Две карточки в ряду на планшетах */
+  }
+}
+
+@media (min-width: 1024px) {
+  .rental-card {
+    width: calc(33.33% - 16px); /* Три карточки в ряду на десктопах */
+  }
+}
